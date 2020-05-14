@@ -94,3 +94,29 @@ body {
 
   border: 2px groove greenyellow;
 }
+
+.grid-container {
+  background-color: blanchedalmond;
+  margin: 10px;
+  height: 505px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* column-gap: 150px; */
+  grid-template-rows: auto auto;
+  /* row-gap: 300px; */
+  /* gap: 300px 150px; */
+  /* justify-content: space-around;
+  align-content: center; */
+}
+
+.grid-item {
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+
+  border: 1px groove black;
+}
