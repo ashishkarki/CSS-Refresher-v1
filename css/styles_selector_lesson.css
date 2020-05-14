@@ -1,0 +1,79 @@
+h2:hover {
+  color: red;
+}
+
+h2[class="subtitle"] {
+  color: blue;
+  font-family: cursive, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+h2[class~="subtitle-2"] {
+  background-color: bisque;
+}
+
+img[src^="../img/"] {
+  border: 5px dashed palevioletred;
+  margin: 10px;
+  padding: 10px;
+}
+
+#about-me {
+  color: green;
+}
+
+/* ul > li:nth-last-child(3) {
+  color: steelblue;
+} */
+
+div ul {
+  background-color: whitesmoke;
+}
+
+/* this doesn't work because the two styles for li has greater specificity */
+/* ul > li {
+  color: crimson;
+} */
+
+ul > li {
+  color: blue;
+}
+
+/* ol > li {
+  color: magenta;
+} */
+
+/* li:only-child {
+  color: yellowgreen;
+}
+
+div > ul > li:only-child {
+  color: chartreuse;
+} */
+
+a#ehow {
+  background-color: grey;
+}
+
+/* #ehow:link {
+  color: blueviolet;
+}
+
+#ehow:visited {
+  color: red;
+} */
+
+h2 + a {
+  font-style: italic;
+}
+
+textarea ~ button {
+  color: purple;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+textarea + button {
+  /* does work: since textarea itself is within another parent */
+  color: darkmagenta;
+}
